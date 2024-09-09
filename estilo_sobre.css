@@ -1,0 +1,117 @@
+body{
+    background-color: #5beb484f;
+}
+
+
+.navMenu{
+    background-color: #419b04; 
+    padding: 10px 0; 
+    height: 45px; 
+}
+
+nav ul{ 
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    justify-content: center; 
+} 
+
+nav ul li{ 
+    position: relative;  
+    margin: 0 15px; 
+ } 
+ 
+ nav ul li a{ 
+     color:#c6ffa9;  
+     text-decoration: none; 
+     font-size: 18px; 
+     padding: 10px; 
+     display: block;  
+     transition: color 0.3s; 
+ 
+ } 
+ 
+ nav ul li a:hover{ 
+     color: #217d15; 
+ } 
+  
+ nav ul li.dropdown-content{ 
+     display: none; 
+     position: absolute; 
+     background-color: #1eff01; 
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2); 
+     z-index: 1; 
+     min-width: 160px; 
+     padding: 0; 
+ } 
+ 
+  
+ 
+ nav ul li .dropdown-content li{ 
+     margin: 0; 
+ } 
+ 
+ nav ul li .dropdown-content li a{ 
+     padding: 10px 15px; 
+ } 
+
+ nav ul li .dropdown-content li a:hover{ 
+     background-color: #77ff00; 
+ } 
+
+ nav ul li:hover .dropdown-content{ 
+     display: block; 
+ } 
+
+ .Sobre-Palmeiras{
+    width: 98%;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-between;
+    gap: 30px;
+ }
+
+ .titulo-equipe{
+    font-family: 'Times New Roman', Times, serif;
+
+ }
+
+ /*container principal*/
+ .container{
+    display: flex;
+    gap: 20px; /* Espaçamento entre os cards */
+justify-content: center;
+align-items: center;
+    flex-wrap: wrap; /* Permite que os cards quebrem linha se necessário */
+ }
+
+ .card{
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Arredonda os cantos dos cards */
+    padding: 20px;
+  
+   justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para dar um efeito de elevação */
+    flex: 1; /* Permite que os cards cresçam igualmente */
+    max-width: 300px; /* Define uma largura máxima para os cards */
+ }
+
+ .card img{
+    width: 100px;
+    height: 120px;
+    align-items: center;
+ }
+
+ /* Estilo para o título dos cards */
+.card h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+/* Estilo para o parágrafo dos cards */
+.card p {
+    color: #666;
+}
